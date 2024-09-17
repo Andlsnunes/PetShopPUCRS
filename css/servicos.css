@@ -1,0 +1,89 @@
+/* Estilos Gerais */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Imagem de Fundo com Transparência */
+body::before {
+    content: "";
+    background: url('/img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6; /* Define a transparência da imagem de fundo (60%) */
+    z-index: -1; /* Mantém a imagem no fundo, atrás de todo o conteúdo */
+}
+
+/* Mantém os outros estilos sem alterar os botões */
+header, #produtos, form, footer {
+    position: relative; /* Garante que os elementos fiquem acima da imagem de fundo */
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência para destacar o conteúdo */
+    padding: 20px;
+    border-radius: 10px;
+    margin:auto;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff7043;
+}
+
+#produtos { 
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+    padding: 40px;
+}
+
+.img {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+  }
+
+form {
+    padding: 30px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+
+/* Estilos para tablets (retrato e paisagem) */
+@media (min-width: 768px) {
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+    /* Outros estilos específicos para tablets */
+  }
+
+  
+  /* Estilos para smartphones (retrato e paisagem) */
+  @media (max-width: 767px) {
+    .container {
+      max-width: 95%;
+    }
+    .navbar {
+      flex-direction: column;
+    }
+    .button {
+      font-size: 14px;
+    }
+    /* Outros estilos específicos para smartphones */
+  }

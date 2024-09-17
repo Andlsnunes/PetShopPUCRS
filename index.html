@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Pet- Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Arquivo CSS personalizado -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-light py-3">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">PetShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrossel de Produtos -->
+    <section id="produtos" class="container mt-5">
+        <h2 class="text-center">Nossos Produtos</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/produto1.jpg" width="550" height="400" alt="Produto 1">
+                    <div class="carousel-caption">
+                        <h5>Roupinha para Cachorro(Macho)</h5>
+                        <p>A partir de R$109,90</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/produto2.jpg" width="550" height="400" alt="Produto 2">
+                    <div class="carousel-caption ">
+                        <h5>Roupinha para Cachorro(Macho)</h5>
+                        <p>A partir de R$89,90</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/produto3.jpg" width="550" height="400" alt="Produto 2">
+                    <div class="carousel-caption ">
+                        <h5>Brinquedos Diversos</h5>
+                        <p>A partir de R$9,90</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Formulário de Cadastro -->
+    <section id="cadastro" class="container mt-5">
+        <h2 class="text-center">Cadastro de Cliente e Pet</h2>
+        <form action="https://formsubmit.co/andre.nunes002@edu.pucrs.br" method="POST">
+            <div class="col-md-6">
+                <label for="nomeCliente" class="form-label">Nome do Cliente</label>
+                <input type="text" class="form-control" id="nomeCliente" required>
+            </div>
+            <div class="col-md-6">  
+
+                <label for="emailCliente" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="emailCliente" required>
+            </div>
+            <div class="col-md-6">
+                <label for="telefoneCliente" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="telefoneCliente" required>
+            </div>
+            <div class="col-md-6">
+                <label for="enderecoCliente" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="enderecoCliente" required>
+            </div>
+            <div class="col-md-6">
+                <label for="nomePet" class="form-label">Nome do Pet</label>
+                <input type="text" class="form-control" id="nomePet" required>
+            </div>
+            <div class="col-md-6">
+                <label for="tipoPet" class="form-label">Tipo de Animal</label>
+                <select id="tipoPet" class="form-select" required>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    </div>
+    </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>&copy; 2024 PetShop. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
