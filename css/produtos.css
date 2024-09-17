@@ -10,7 +10,7 @@ html {
 /* Imagem de Fundo com Transparência */
 body::before {
     content: "";
-    background: url('/img/bg.png') no-repeat center center fixed;
+    background: url('../img/bg.png') no-repeat center center fixed;
     background-size: cover;
     position: absolute;
     top: 0;
